@@ -1,0 +1,33 @@
+/* Problemas a resolver y soluciones en código*/
+
+/*1-Igualar el tamaño de todos los elementos en una fila*/
+display: flex;
+justify-content: space-between;
+align-items: stretch;
+
+/*2-Alinear un elemento al final del contenedor*/
+.elemento-final {
+    margin-left: auto;
+}
+
+/*3-Centrar un único elemento horizontal y verticalmente*/
+display: flex;
+justify-content: center;
+align-items: center;
+width: 300px;
+height: 300px;
+
+/*4-Ancho fijo para el primer elemento, resto flexible*/
+.primer-elemento {
+    flex-basis: 100px;
+    flex-shrink: 0;
+}
+.otros-elementos {
+    flex: 1;
+}
+
+/*5-Tamaño mínimo y distribución uniforme en una fila*/
+.elemento {
+    min-width: 100px;
+    flex: 1;
+}
